@@ -82,4 +82,17 @@ public class CustomList extends ArrayAdapter<City> {
     public int countCities(){
         return cities.size();
     }
+
+    /**
+     * This returns whether or not a city exists in a list; if it does, the city is removed.
+     * @param city
+     * This is the city we want to check is in this list.
+     * @return
+     * Return the number of cities in the list
+     * @throws
+     * IllegalArgumentException if city is not found
+     */
+    public int hasCity(City city) {
+        return 0;
+    }
 }
