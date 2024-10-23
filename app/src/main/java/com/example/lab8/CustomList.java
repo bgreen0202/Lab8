@@ -93,6 +93,10 @@ public class CustomList extends ArrayAdapter<City> {
      * IllegalArgumentException if city is not found
      */
     public int hasCity(City city) {
-        return 0;
+        if (!cities.contains(city)) {
+            throw new IllegalArgumentException("City not found in the list.");
+        }
+        deleteCity(city);
+        return countCities();
     }
 }
